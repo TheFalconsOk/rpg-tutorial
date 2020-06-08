@@ -9,17 +9,19 @@ public class Mover : MonoBehaviour
 {
     //config
     [SerializeField] Transform target;
+    public NavMeshAgent agent;
     private void Start()
     {
-        // print the path to the temporary data folder
-        print(Application.temporaryCachePath)
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = target.position;
+        agent = GetComponent<NavMeshAgent>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        if (agent.destination != target.position)
+        {
+            agent.destination = target.position;
+        }   
     }
 }
