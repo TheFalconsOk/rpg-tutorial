@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 587802035}
   - component: {fileID: 587802036}
   - component: {fileID: 587802038}
+  - component: {fileID: 3495741313634076570}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -99,7 +100,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.3
   m_Speed: 5.66
-  m_Acceleration: 3
+  m_Acceleration: 7
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 3
@@ -129,6 +130,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3495741313634076570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147612182419222446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c9eb6c76f10d247abc7e2bf44443fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1219521447987965938
 PrefabInstance:
   m_ObjectHideFlags: 0
