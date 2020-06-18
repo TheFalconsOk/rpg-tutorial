@@ -27,7 +27,7 @@ namespace RPG.Control
                 if (clickTarget == null) continue;
                 else if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Fighter>().Attack();
+                    GetComponent<Fighter>().Attack(clickTarget);
                 }
                 return true;
             }
@@ -45,8 +45,8 @@ namespace RPG.Control
             {
                 if (Input.GetMouseButton(0))
                 {
+                    GetComponent<Fighter>().AttackCancel();
                     GetComponent<Mover>().MoveTo(hit.point);
-                   
                 }
                 return true;
             }

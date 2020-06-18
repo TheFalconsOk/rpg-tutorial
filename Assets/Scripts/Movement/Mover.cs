@@ -22,12 +22,18 @@ namespace RPG.Movement
         void Update()
         {
             UpdateAnimator();
-
         }
+
 
         public void MoveTo(Vector3 destination)
         {
             agent.destination = destination;
+            agent.isStopped = false;
+        }
+
+        public void Stop()
+        {
+            agent.isStopped = true;
         }
 
         private void UpdateAnimator()
