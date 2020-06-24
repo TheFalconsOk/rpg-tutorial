@@ -4833,7 +4833,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 587802036, guid: 40698c53ca7246b4a91ee2055cf8c156, type: 3}
       propertyPath: m_StoppingDistance
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 587802036, guid: 40698c53ca7246b4a91ee2055cf8c156, type: 3}
+      propertyPath: m_Acceleration
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4147612182419222442, guid: 40698c53ca7246b4a91ee2055cf8c156,
         type: 3}
@@ -4894,11 +4898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5195872562795638155, guid: 40698c53ca7246b4a91ee2055cf8c156,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40698c53ca7246b4a91ee2055cf8c156, type: 3}
